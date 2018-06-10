@@ -7,3 +7,16 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fextentsoft%2Fdevops-node.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fextentsoft%2Fdevops-node?ref=badge_shield)
 [![Known Vulnerabilities](https://snyk.io/test/github/extentsoft/devops-node/badge.svg)](https://snyk.io/test/github/extentsoft/{repo})
 
+
+
+
+cache:
+  directories:
+      - node_modules
+before_script:
+  - "npm install -g gulp-cli"
+install:
+  - "npm install"
+script:
+  - "npm test"
+
